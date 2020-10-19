@@ -1,9 +1,9 @@
 /*
 Style Sheet for CS202
 * version: 4.0
-* last modified: 7.1.2020
+* last modified: 10.11.2020
 * author: Justice Banson
-* email: justice@justicebanson.com
+* email: youremail@wwu.edu
 * website: lesson 4
 */
 /* 
@@ -9690,12 +9690,14 @@ header {
 
 nav {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
-  display: inline-block;
   padding: 1em 2em;
 }
 
@@ -9712,14 +9714,18 @@ main {
   background-color: #eee;
 }
 
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .sideleft {
-  width: 30%;
-  float: left;
+  margin-right: 4%;
 }
 
 .sideright {
-  width: 60%;
-  float: right;
+  flex-grow: 2;
+  margin-left: 4%;
 }
 
 .btn {
@@ -9732,11 +9738,15 @@ main {
 }
 
 .box {
-  width: 30%;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2em;
-  text-align: center;
   color: #fff;
+}
+
+.box p {
+  text-align: center;
 }
 
 .box .fas {
@@ -9746,6 +9756,11 @@ main {
 footer {
   width: 100%;
   text-align: center;
+}
+
+footer .container {
+  justify-content: center;
+  align-items: center;
 }
 
 .social {
